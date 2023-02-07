@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Calculator for monthly salary and expenses
+    </title>
+
+</head>
+
+<body style="text-align: center;">
+    <h1 style="color: white;">Expenses Calculator</h1>
+    <h3>Input the data in the corresponding field</h3>
+
+    <form>
+        <label for="salary">Salary:</label><br>
+        <input type="text" id="salary" name="salary" maxlength="8" required><br><br>
+        <label for="savings">Savings:</label><br>
+        <input type="text" id="savings" name="savings" maxlength="8" required><br><br>
+        <label for ="rent">Rent:</label><br>
+        <input type="text" id="rent" name="rent" maxlength="8" required><br><br>
+        <label for ="food">Food:</label><br>
+        <input type="text" id="food" name="food" maxlength="8" required><br><br>
+        <label for ="subs">Subscriptions:</label><br>
+        <input type="text" id="subs" name="subs" maxlength="8" required><br><br>
+        <label for ="car">Car expenses:</label><br>
+        <input type="text" id="car" name="car" maxlength="8" required><br><br>
+        <label for ="others">Others:</label><br>
+        <input type="text" id="others" name="others" maxlength="8" required><br><br><br>
+        <label for="sum">Money Left:</label><br>
+        <input type="text" id="sum" name="sum" readonly><br><br>
+        <button type ="button" class="button" onclick="calculateSavings()" id="button" name="sum"><span>Send</span></button><br>
+    </form>
+
+    <script>
+        function calculateSavings(){
+            let salary = document.getElementById("salary").value;
+            let savings = document.getElementById("savings").value;
+            let rent = document.getElementById("rent").value;
+            let food = document.getElementById("food").value;
+            let subs = document.getElementById("subs").value;
+            let car = document.getElementById("car").value;
+            let others = document.getElementById("others").value;
+            let debt = 244.87;
+
+            let sum1 = salary - savings - rent - debt - subs - food - car - others;
+            let sum = sum1.toFixed(2);
+            
+            document.getElementById("sum").value = sum;}
+    </script>
+</body>
+</html>

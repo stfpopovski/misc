@@ -1,0 +1,92 @@
+html{
+    height: 100%;
+}
+
+body{
+    background-color: #aeaeb4;
+    color: beige;
+    padding-bottom: 1px;
+}
+
+h1{
+    color: beige;
+    text-shadow: 2px 2px #000000;
+}
+
+h3{
+    color: beige;
+    text-shadow: 2px 2px #000000;
+}
+
+
+form {
+    background: linear-gradient(46deg, rgba(2, 0, 36, 0.747) 0%, rgba(128, 86, 180, 0.719) 35%, rgba(0, 106, 255, 0.493) 100%);
+    border : 1px solid #000;
+    box-shadow: 7px 7px 7px #000000;
+    border-radius: 15px;
+    padding : 50px;
+    padding-bottom: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 40px;
+}
+
+input[type="text"], textarea {
+    background-color : #ff000042;
+    border-radius: 5px;
+    height: 20px; 
+}
+
+input[id="salary"], textarea {
+    background-color : #00ff553b; 
+}
+
+input[id="button"], textarea {
+    background-color : #000000;
+    color: aliceblue;
+    border-color: beige; 
+}
+input[id="sum"], textarea {
+    text-align: center;
+    background-color : rgba(255, 255, 0, 0.178);
+    color: aliceblue;
+    border-color: beige; 
+}
+
+.button {
+    border-radius: 5px;
+    background: linear-gradient(46deg, rgba(0, 0, 0, 0.747) 0%, rgba(212, 202, 202, 0.719) 35%, rgba(0, 0, 0, 0.493) 100%);
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 15px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
